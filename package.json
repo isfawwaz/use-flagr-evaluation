@@ -13,6 +13,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "check-dependency-version-consistency": "^3.0.3",
     "eslint-config-custom": "*",
     "prettier": "latest",
     "turbo": "latest"
