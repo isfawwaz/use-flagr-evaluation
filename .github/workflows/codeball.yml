@@ -5,6 +5,16 @@ on:
     types: [created, edited]
 
 jobs:
+  comment:
+    runs-on: ubuntu-latest
+    if: ${{ !github.event.pull_requests.draft }}
+    name: AI comment
+    steps:
+      - name: OpenAI Comment
+        uses: anc95/ChatGPT-CodeReview@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.CODEBALL_BOT_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
   review:
     runs-on: ubuntu-latest
     if: ${{ !github.event.pull_request.draft }}
@@ -15,7 +25,7 @@ jobs:
         with:
           approvePullRequests: "true"
           labelPullRequestsWhenApproved: "true"
-          labelPullRequestsWhenReviewNeeded: "false"
-          failJobsWhenReviewNeeded: "true"
+          labelPullRequestsWhenReviewNeeded: "true"
+          failJobsWhenReviewNeeded: "false"
           codeSuggestionsFromComments: "true"
           GITHUB_TOKEN: ${{ secrets.CODEBALL_BOT_TOKEN }}
