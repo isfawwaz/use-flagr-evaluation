@@ -1,13 +1,14 @@
 version = 1
 
 [approve]
-auto_approve_usernames = ["dependabot"]
-auto_approve_labels = ["ready"]
+auto_approve_usernames = ["dependabot", "isfawwaz"]
+auto_approve_labels = ["ready", "codeball:approved"]
 
 [merge]
 method = "rebase_fast_forward"
 prioritize_ready_to_merge = true
 block_on_neutral_required_check_runs = true
+priority_merge_label = ["ready", "codeball:approved"]
 
 [merge.automerge_dependencies]
 usernames = ["dependabot"]
