@@ -5,14 +5,13 @@
 
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
+  - package-ecosystem: npm
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
     assignees:
       - "isfawwaz"
     open-pull-requests-limit: 5
-    package-ecosystem: npm
     rebase-strategy: auto
     versioning-strategy: lockfile-only
     labels:
