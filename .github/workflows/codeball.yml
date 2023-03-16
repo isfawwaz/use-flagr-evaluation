@@ -1,0 +1,19 @@
+name: Codeball
+on:
+  pull-request: {}
+  pull_request_review_comment:
+    types: [created, edited]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    if: ${{ !github.event.pull_request.draft }}
+    name: Review by Codeball
+    steps:
+      - name: Codeball
+        uses: sturdy-dev/codeball-action@v2
+        with:
+          approvePullRequests: "true"
+          labelPullRequestsWhenApproved: "true"
+          labelPullRequestsWhenReviewNeeded: "true"
+          failJobsWhenReviewNeeded: "true"
