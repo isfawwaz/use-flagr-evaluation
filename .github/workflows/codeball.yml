@@ -17,4 +17,4 @@ jobs:
           labelPullRequestsWhenApproved: "true"
           labelPullRequestsWhenReviewNeeded: "true"
           failJobsWhenReviewNeeded: "false"
-          GITHUB_TOKEN= ${{ secrets.CODEBALL_BOT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CODEBALL_BOT_TOKEN }}
