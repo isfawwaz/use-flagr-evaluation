@@ -1,0 +1,20 @@
+name: Test Action
+description: Test and lint action
+
+runs:
+  using: composite
+  steps:
+    - name: ⎔ Setup node
+      uses: ./.github/actions/setup
+
+    - name: ▶️ Run lint script
+      shell: bash
+      run: pnpm lint
+
+    - name: ▶️ Update test snapshot first
+      shell: bash
+      run: pnpm run test -- --u
+
+    - name: ▶️ Run test script
+      shell: bash
+      run: pnpm run test -- --coverage

@@ -1,0 +1,34 @@
+name: CI
+on:
+  push:
+    branches:
+      - '+([0-9])?(.{+([0-9]),x}).x'
+      - 'main'
+      - 'next'
+      - 'next-major'
+      - 'beta'
+      - 'alpha'
+      - 'pre/rc'
+      - '!all-contributors/**'
+  pull_request: {}
+
+jobs:
+  main:
+    # ignore all-contributors PRs
+    if: ${{ !contains(github.head_ref, 'all-contributors') || !contains('docs', github.event.head_commit.message) }}
+    strategy:
+      matrix:
+        node: ['14.15.0', '16.10.0', 18]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.10.0
+
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: ▶️ Run lint & test
+        uses: ./.github/actions/lint_test
+
+      - name: ⬆️ Upload coverage report
+        uses: codecov/codecov-action@v3

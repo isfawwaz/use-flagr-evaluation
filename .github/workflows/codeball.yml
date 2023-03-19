@@ -1,25 +1,25 @@
-name: Codeball
-on:
-  pull_request: {}
-  pull_request_review_comment:
-    types: [created, edited]
+name: AIReview
 
-permissions:
-  contents: read
-  issues: write
-  pull-requests: write
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
 
 jobs:
-  codeball_job:
+  review:
     runs-on: ubuntu-latest
-    name: Codeball
+    if: ${{ !github.event.pull_request.draft }}
+    name: AI Review
     steps:
-      - name: Codeball
+      - name: Codeball Review
         uses: sturdy-dev/codeball-action@v2
         with:
-          # For all configuration options see https://github.com/sturdy-dev/codeball-action/blob/v2/action.yml
-          approvePullRequests: "true"
-          labelPullRequestsWhenApproved: "true"
-          labelPullRequestsWhenReviewNeeded: "false"
-          failJobsWhenReviewNeeded: "false"
-          GITHUB_TOKEN: ${{ secrets.CODEBALL_BOT_TOKEN }}
+          approvePullRequests: 'true'
+          labelPullRequestsWhenApproved: 'true'
+          labelPullRequestsWhenReviewNeeded: 'true'
+          failJobsWhenReviewNeeded: 'false'
+          GITHUB_TOKEN: ${{ secrets.CEPOT_BOT_TOKEN }}
+          approveThreshold: '0.700'
