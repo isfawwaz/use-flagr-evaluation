@@ -9,12 +9,16 @@ runs:
 
     - name: ▶️ Run lint script
       shell: bash
-      run: pnpm lint
-
-    - name: ▶️ Update test snapshot first
-      shell: bash
-      run: pnpm run test -- --u
+      run: yarn lint
 
     - name: ▶️ Run test script
       shell: bash
-      run: pnpm run test -- --coverage
+      run: yarn test
+
+    # - name: ▶️ Update test snapshot first
+    #   shell: bash
+    #   run: yarn run test -- --u
+
+    # - name: ▶️ Run test script
+    #   shell: bash
+    #   run: yarn run test -- --coverage
