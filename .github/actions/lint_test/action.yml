@@ -14,11 +14,3 @@ runs:
     - name: ▶️ Run test script
       shell: bash
       run: yarn test
-
-    # - name: ▶️ Update test snapshot first
-    #   shell: bash
-    #   run: yarn run test -- --u
-
-    # - name: ▶️ Run test script
-    #   shell: bash
-    #   run: yarn run test -- --coverage
