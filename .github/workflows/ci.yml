@@ -18,7 +18,7 @@ jobs:
     if: ${{ !contains(github.head_ref, 'all-contributors') || !contains('docs', github.event.head_commit.message) }}
     strategy:
       matrix:
-        node: ['14.17.0', '16.10.0', 18]
+        node: ['14.17.0', '16.14.0', 18]
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
