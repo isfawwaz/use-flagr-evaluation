@@ -1,10 +1,25 @@
 module.exports = {
   root: true,
-  // This tells ESLint to load the config from the package `eslint-config-custom`
-  extends: ["custom"],
+  env: {
+    node: 'true',
+  },
+  extends: ['@isfawwaz/eslint-config-base', '@isfawwaz/eslint-config-jest'],
+  rules: {
+    'operator-linebreak': [
+      'error',
+      'before',
+      {
+        overrides: {
+          '=': 'after',
+          '||': 'after',
+          '&&': 'after',
+        },
+      },
+    ],
+  },
   settings: {
     next: {
-      rootDir: ["apps/*/"],
+      rootDir: ['examples/*/'],
     },
   },
 };
