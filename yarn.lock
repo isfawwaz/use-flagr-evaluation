@@ -1934,47 +1934,47 @@ tsutils@^3.21.0:
   dependencies:
     tslib "^1.8.1"
 
-turbo-darwin-64@1.8.6:
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/turbo-darwin-64/-/turbo-darwin-64-1.8.6.tgz#0aa99b8e6e48667648ad5bb9b2c29d734821cd11"
-  integrity sha512-VlXkQR0TEBAEyBRsvAXBax+fj1EdPKPliwBaCnRLiDUcA/8wYlKte/Kk6ubmj9E0n7U/B4keCxxHiJZqW/5Rqg==
+turbo-darwin-64@1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/turbo-darwin-64/-/turbo-darwin-64-1.9.4.tgz#3f40cba2dcc13011f4c51101ba03f4c1aa511daf"
+  integrity sha512-kCmDmxyUWWI+BstTZQKNM87UbNx40C0ZHUTFqs9tmeH7d5+gA2QhqrSoBuwQYw7YYNLpbkqu1ObbppsUlIFPdQ==
 
-turbo-darwin-arm64@1.8.6:
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/turbo-darwin-arm64/-/turbo-darwin-arm64-1.8.6.tgz#359a80bd9ae4ffc7091a2b7dbd260920c5fb37b6"
-  integrity sha512-w4L2QLj90ex68UXxTPoqtZPl8mWzc6a1RtPjQhoxAWtZf9T2WXi813dCzYEbVUVC09/DOW/VxZRN7sb2r0KP9A==
+turbo-darwin-arm64@1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/turbo-darwin-arm64/-/turbo-darwin-arm64-1.9.4.tgz#257e67438033d1bfb75650b5ca8664d0a00e0ccb"
+  integrity sha512-Of64jMEaDDHx0dzU7RwdOuh1lP021vtQun9wmEHhT0Hk/TQF+kDCywoHcY7R5nlSRcssFjysVyhCeZW6CkWrrA==
 
-turbo-linux-64@1.8.6:
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/turbo-linux-64/-/turbo-linux-64-1.8.6.tgz#432d6b569bbcf64bdc3f6b3ec898f210d3ff4b1c"
-  integrity sha512-eV245jefIhMAZskqQKalFwreC5UEdQcuHcBiWcgUk0py76fbwB7+1HfH5cmeJlb3a1sB6f3H0HHmGPmb34feCA==
+turbo-linux-64@1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/turbo-linux-64/-/turbo-linux-64-1.9.4.tgz#a4d7a06b8b786144d3c967a8f647561a71d8057a"
+  integrity sha512-kajvUnXlUNtgVzLW3Y/RoHrC64G+G0Ky/o1F+oP6QK/T85H8NwNHXq2F6hyIrZPNGbKpPgpetuQ1waIibxJ0rA==
 
-turbo-linux-arm64@1.8.6:
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/turbo-linux-arm64/-/turbo-linux-arm64-1.8.6.tgz#5a75828bdaf6894f04510bedf4d6c7fb97117e74"
-  integrity sha512-Kiw3nyEvNU6Bpil4zE5FwhasPAOi59R4YdCmjJp0Sen6V9u+/Jij6SWwaoUdATORJLiYQBbhontWBH55B53VDw==
+turbo-linux-arm64@1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/turbo-linux-arm64/-/turbo-linux-arm64-1.9.4.tgz#5426bd72ef2a80cad390ecf4220779824faab41f"
+  integrity sha512-11P9Y8MoimqUzib3SU3md4g1loLF0FRHpYCbPzUTWPT3beOcdM2nop2u/yFHyBnbSxz1rTWczRJPnNoAki0B/Q==
 
-turbo-windows-64@1.8.6:
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/turbo-windows-64/-/turbo-windows-64-1.8.6.tgz#0ade09c84581539aab075d1adf03dce78bcfd378"
-  integrity sha512-34BkAG9r4nE00xeMeVahaF82h8R6SO+IIOcD60fNr2p+Ch+YcQa+DbEWA/KUj3coUTIiNP5XnRCLRUYADdlxjQ==
+turbo-windows-64@1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/turbo-windows-64/-/turbo-windows-64-1.9.4.tgz#b6458e3f715f0b0ab0b1bf1ded3ed6f2a8e0f1f9"
+  integrity sha512-2tFcFhuqs1c1DGFAk2wjU0TXrOXKoPdma9vxrTVdwvtz5Nc8XPF8RNW+1jbmRjpumGUkXou6Pe973GSvPjvD5w==
 
-turbo-windows-arm64@1.8.6:
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/turbo-windows-arm64/-/turbo-windows-arm64-1.8.6.tgz#a675c0443e068e49bc64db679880282601756a8a"
-  integrity sha512-4jWUaI7Lmonp2I3x81GruiCYd0aQsG/xDOYhuv9+j2yIgB/UHJFz/P8PWp/nziwPtGpRd/AheDlPzzyd9lWoqw==
+turbo-windows-arm64@1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/turbo-windows-arm64/-/turbo-windows-arm64-1.9.4.tgz#d4959a8b81dc5c3561b8e22355ab74b05d47f803"
+  integrity sha512-wJfEwUyWXxn6VKD2Vbycke6cm99gJ0llkr9gUnbR06eaRu1TiLY24FcFqN95/wftp0n5nne7b6K7Wz1TLh1fJQ==
 
 turbo@latest:
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/turbo/-/turbo-1.8.6.tgz#35a14872de5bf00ba6062cf90dd2692a95e5f6e2"
-  integrity sha512-6IOOaa8ytgjnSCTnp3LKAd2uGBZ/Kmx8ZPlI/YMWuKMUqvkXKLbh+w76ApMgMm+faUqti+QujVWovCu2kY6KuQ==
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/turbo/-/turbo-1.9.4.tgz#d9a3e350767dc894a5f5b427144d20d435c22032"
+  integrity sha512-PqhlMCmu6sOqcVswt1tYL0TV/O0uQ8kUZWfmlEl0EHPusc2R3nzg7KVXrZbXTHXzQH5HE2oJm9iUI0mYz31i7Q==
   optionalDependencies:
-    turbo-darwin-64 "1.8.6"
-    turbo-darwin-arm64 "1.8.6"
-    turbo-linux-64 "1.8.6"
-    turbo-linux-arm64 "1.8.6"
-    turbo-windows-64 "1.8.6"
-    turbo-windows-arm64 "1.8.6"
+    turbo-darwin-64 "1.9.4"
+    turbo-darwin-arm64 "1.9.4"
+    turbo-linux-64 "1.9.4"
+    turbo-linux-arm64 "1.9.4"
+    turbo-windows-64 "1.9.4"
+    turbo-windows-arm64 "1.9.4"
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
