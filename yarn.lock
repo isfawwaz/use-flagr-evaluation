@@ -92,6 +92,11 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
+"@types/js-yaml@^4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@types/js-yaml/-/js-yaml-4.0.5.tgz#738dd390a6ecc5442f35e7f03fa1431353f7e138"
+  integrity sha512-FhpRzf927MNQdRZP0J5DLIdTXhjLYzeUTmLAu69mnVksLH9CJY3IuSeEgbKUki7GQZm0WqDkGzyxju2EZGD2wA==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
@@ -220,6 +225,11 @@ argparse@^1.0.7:
   integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
   dependencies:
     sprintf-js "~1.0.2"
+
+argparse@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
+  integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
 
 aria-query@^5.1.3:
   version "5.1.3"
@@ -366,14 +376,16 @@ chalk@^5.0.1:
   integrity sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==
 
 check-dependency-version-consistency@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/check-dependency-version-consistency/-/check-dependency-version-consistency-3.0.3.tgz#8033dc1d1e64eae07a86b14414a396e4f68d1f60"
-  integrity sha512-BmCr4v9xBGCPBTUoJwqaSJV9VqWXxAR983BogbEMU/y3NqwbvFkgpUBNW9YTP79Kv9FIy8X+G/5TU79HpI8C6Q==
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/check-dependency-version-consistency/-/check-dependency-version-consistency-3.1.1.tgz#069651fd9dc5b9c7bb4f8e105ecd418c065d3e2d"
+  integrity sha512-9v1vMhQOxQvmq9Imi0nkIRqhZNTK7N+FR8lTjy0VxFM+qXu6S1FkH4qlMJDFZfU5p1qQfdeWGnGWD9RJYzQPkw==
   dependencies:
+    "@types/js-yaml" "^4.0.5"
     chalk "^5.0.1"
     commander "^9.0.0"
     edit-json-file "^1.7.0"
     globby "^13.1.1"
+    js-yaml "^4.1.0"
     semver "^7.3.5"
     table "^6.7.1"
     type-fest "^2.1.0"
@@ -1371,6 +1383,13 @@ js-yaml@^3.13.1:
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
+
+js-yaml@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
+  integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
+  dependencies:
+    argparse "^2.0.1"
 
 json-schema-traverse@^0.4.1:
   version "0.4.1"
