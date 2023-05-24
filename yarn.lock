@@ -376,9 +376,9 @@ chalk@^5.0.1:
   integrity sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==
 
 check-dependency-version-consistency@^3.0.3:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/check-dependency-version-consistency/-/check-dependency-version-consistency-3.2.1.tgz#fb279741f4302833580eee54331f4d4553737267"
-  integrity sha512-zGe0sRWdMW7t/Dh038jgPvNSpx/hB77DLvutnbmwSGkG/78A2n3xFHGxGxVv2WIlu7Bk9uTzphvzMpiADfP+tQ==
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/check-dependency-version-consistency/-/check-dependency-version-consistency-3.3.0.tgz#9d7646d455cae3c1784adb917b692693ad19d63f"
+  integrity sha512-oIqdqC5kLjMP3EIqxmWNq4JcuWLkFBrR0TQyLAQhk3y+zmIaxIFp5ABSFyyf0eNc7H6LeG8vZ1K0V0jSEKSP2g==
   dependencies:
     "@types/js-yaml" "^4.0.5"
     chalk "^5.0.1"
